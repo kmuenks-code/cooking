@@ -48,7 +48,11 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.base.outputs.path }}
 
+      # enablement turns Pages on for the repo the first time, so this does not
+      # need a visit to Settings before the first deploy.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
