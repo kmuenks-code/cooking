@@ -36,8 +36,6 @@ export function catalog(data: AppData): Catalog {
   };
 }
 
-export const EMPTY_PROGRESS: Progress = { studied: [], practiced: [] };
-
 /** `practiced` is derived from the journal, never stored separately. */
 export function progressFrom(
   studied: string[],
