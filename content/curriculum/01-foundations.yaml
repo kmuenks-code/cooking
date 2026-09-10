@@ -1,0 +1,80 @@
+id: foundations
+order: 1
+title: Foundations
+question: "How do I control the kitchen and the cooking process at all?"
+description: >
+  The habits and mental models that make everything else learnable. Almost every
+  failure a home cook blames on a recipe is actually a failure of heat control,
+  sequencing, or not tasting. This module is deliberately first and deliberately
+  shallow on technique.
+
+submodules:
+  - id: found.safety-sanitation
+    title: Safety and Sanitation
+    tier: 1
+    prereqs: []
+    why: Cross-contamination, safe temperatures, and burn and cut avoidance. Boring, cheap to learn, expensive to skip.
+    practice: Cook any raw-protein dish. Log your handling sequence and where you washed hands or boards.
+
+  - id: found.mise-en-place
+    title: Mise en Place
+    tier: 1
+    prereqs: [found.safety-sanitation]
+    why: Why prepping before igniting the burner is not fussiness. It is the only way to hit timing windows you cannot pause.
+    practice: Cook a dish with at least one fast step. Prep everything first. Log what would have burned otherwise.
+
+  - id: found.working-clean
+    title: Working Clean
+    tier: 1
+    prereqs: [found.mise-en-place]
+    why: Cleaning as you go is a cognitive tool, not a chore. It keeps the board free and the next step visible.
+    practice: Cook a multi-step dish and clean between steps. Log how end-of-cook cleanup compared to usual.
+
+  - id: found.pan-selection
+    title: Pans, Materials, and Why They Behave Differently
+    tier: 1
+    prereqs: [found.safety-sanitation]
+    why: Thickness buffers temperature swings, material sets responsiveness and sticking. This decides half your result before the heat is on.
+    practice: Cook the same item in two different pans. Log the difference in browning and sticking.
+
+  - id: found.heat-control
+    title: Reading and Controlling Heat
+    tier: 1
+    prereqs: [found.pan-selection]
+    why: Burner numbers mean nothing. Learning visual and audible cues for pan temperature is the highest-leverage skill in cooking.
+    practice: Preheat a pan and identify its temperature by water bead, oil shimmer, and sound before adding food. Log your calibration.
+
+  - id: found.tasting-and-adjusting
+    title: Tasting and Adjusting
+    tier: 1
+    prereqs: []
+    why: The habit that separates cooks from recipe-followers. What to taste for, when, and what to do about it.
+    practice: Taste one dish at three points during cooking. Log what changed and what you adjusted.
+
+  - id: found.measuring
+    title: Measuring, Weighing, and Eyeballing
+    tier: 2
+    prereqs: [found.tasting-and-adjusting]
+    why: When precision matters (baking, brines, ratios) and when it actively slows you down.
+    practice: Cook one dish by weight and one by feel. Log where precision helped and where it did not.
+
+  - id: found.doneness
+    title: Doneness, Thermometers, and Carryover
+    tier: 2
+    prereqs: [found.heat-control]
+    why: Temperature is the only honest measure of doneness. Carryover is why perfect-in-the-pan arrives overcooked.
+    practice: Cook a protein to a target internal temperature. Log pull temp, rested temp, and the gap.
+
+  - id: found.timing-sequencing
+    title: Timing and Sequencing a Whole Meal
+    tier: 2
+    prereqs: [found.mise-en-place, found.doneness]
+    why: Working backward from everything-hot-at-once is a planning skill, not a cooking skill, and nobody teaches it.
+    practice: Cook a three-component meal. Write the backward schedule first, then log where reality diverged.
+
+  - id: found.reading-recipes
+    title: Reading a Recipe Critically
+    tier: 2
+    prereqs: [found.tasting-and-adjusting, found.heat-control]
+    why: Spotting what a recipe left out, got wrong, or assumed about your equipment. The first step toward not needing them.
+    practice: Cook a recipe and annotate it. Mark every instruction that was vague, wrong, or missing for your setup.

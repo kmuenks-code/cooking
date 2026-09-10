@@ -1,0 +1,107 @@
+id: core-preparations
+order: 6
+title: Core Preparations
+question: "What are the building blocks I make once and use everywhere?"
+description: >
+  The reusable sub-assemblies of cooking. Each of these appears inside dozens of
+  finished dishes, which is why learning them as components rather than as
+  recipe steps multiplies what you can cook.
+
+submodules:
+  - id: prep.aromatic-bases
+    title: Aromatic Bases
+    tier: 1
+    prereqs: [flavor.aromatics-alliums, knife.uniform-cuts]
+    why: Mirepoix, soffritto, sofrito, the trinity, and their equivalents. Nearly identical technique, and the substitution is one of the main levers of cuisine identity.
+    practice: Build one aromatic base and cook it slowly. Log the color and smell at each stage.
+
+  - id: prep.caramelized-onions
+    title: Caramelized Onions
+    tier: 1
+    prereqs: [flavor.aromatics-alliums, found.heat-control]
+    why: A patience exercise that teaches the difference between browning and burning, and what forty minutes of low heat actually buys you.
+    practice: Caramelize onions properly without rushing. Log elapsed time and taste at three points.
+
+  - id: prep.compound-butters
+    title: Compound Butters and Finishing Fats
+    tier: 1
+    prereqs: [flavor.fat, flavor.herbs]
+    why: A make-ahead flavor delivery system, and the simplest introduction to the idea that a finishing element can carry a dish.
+    practice: Make a compound butter and finish two different dishes with it. Log the effect.
+
+  - id: prep.crunch-elements
+    title: Toasted Nuts, Crumbs, and Crunch
+    tier: 1
+    prereqs: [flavor.texture-contrast]
+    why: The cheapest upgrade available to a home cook. Learning to keep a crunch component on hand changes weeknight food.
+    practice: Add a toasted crunch element to a soft dish. Log the difference in how it ate.
+
+  - id: prep.rice-cookery
+    title: Rice Cookery
+    tier: 1
+    prereqs: [ingr.starches-grains]
+    why: Absorption, pilaf, and risotto methods are three different answers to the same starch question.
+    practice: Cook rice by absorption and by the pilaf method. Log texture and separation.
+
+  - id: prep.stock
+    title: Stock and Broth
+    tier: 2
+    prereqs: [prep.aromatic-bases, heat.boiling-simmering, ingr.muscle-structure]
+    why: Extraction of gelatin and flavor over time. The single ingredient that most separates restaurant depth from home cooking.
+    practice: Make a stock and chill it. Log whether it set to a gel and what that told you.
+
+  - id: prep.roux
+    title: Roux
+    tier: 2
+    prereqs: [ingr.flour-gluten, heat.fat-as-medium]
+    why: Cooking flour in fat both thickens and flavors, and the color you take it to trades thickening power for taste.
+    practice: Cook a roux to blond and another to brown. Log thickening power and flavor of each.
+
+  - id: prep.braise-base
+    title: Building a Braise
+    tier: 2
+    prereqs: [heat.braising, prep.aromatic-bases, prep.stock]
+    why: Sear, aromatics, deglaze, liquid, low and slow. A repeatable template that covers an enormous range of dishes.
+    practice: Braise without a recipe using the template. Log each decision you made and why.
+
+  - id: prep.pasta
+    title: Pasta, Fresh and Dry
+    tier: 2
+    prereqs: [ingr.flour-gluten, heat.boiling-simmering]
+    why: Starchy pasta water is an emulsifier, not waste. Finishing pasta in sauce is a technique, not a shortcut.
+    practice: Finish pasta in the pan with sauce and pasta water. Log how the sauce changed.
+
+  - id: prep.quick-pickles
+    title: Pickles and Quick Pickles
+    tier: 2
+    prereqs: [flavor.acid, ingr.vegetables]
+    why: An acid-and-crunch component you can keep on hand, and a first look at how salt and acid preserve.
+    practice: Quick-pickle a vegetable and use it to cut a rich dish. Log the balancing effect.
+
+  - id: prep.brines-cures
+    title: Brines and Cures
+    tier: 2
+    prereqs: [flavor.salt, ingr.muscle-structure]
+    why: Salt moving through protein over time changes moisture retention and texture. Dry brining is usually better than wet, and knowing why matters.
+    practice: Dry-brine a protein overnight against an unbrined control. Log juiciness and seasoning depth.
+
+  - id: prep.basic-doughs
+    title: Basic Doughs
+    tier: 2
+    prereqs: [ingr.flour-gluten, found.measuring]
+    why: Hydration, fat, and mixing method produce every dough from flatbread to pastry from nearly the same ingredients.
+    practice: Make one dough and note the hydration by weight. Log how it handled.
+
+  - id: prep.confit
+    title: Confit and Fat Preservation
+    tier: 3
+    prereqs: [heat.low-temp-sous-vide, prep.brines-cures]
+    why: Low-temperature cooking submerged in fat, for texture and for keeping. Slow collagen conversion without moisture loss.
+    practice: Confit something and use it in two dishes. Log the texture and how it kept.
+
+  - id: prep.fermentation
+    title: Fermentation Basics
+    tier: 3
+    prereqs: [prep.quick-pickles, found.safety-sanitation]
+    why: Controlled microbial activity as a flavor tool. Enormous depth from salt, time, and patience.
+    practice: Ferment one vegetable and taste it across several days. Log the progression.

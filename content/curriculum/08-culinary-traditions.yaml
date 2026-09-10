@@ -1,0 +1,98 @@
+id: culinary-traditions
+order: 8
+title: Culinary Traditions
+question: "What makes a dish taste like it comes from somewhere?"
+description: >
+  Cuisines are not arbitrary collections of recipes. Each is a consistent set of
+  choices about fat, acid, aromatic base, spice, and starch. Learning the pattern
+  behind a cuisine is worth more than learning twenty of its recipes, and it is
+  the fastest route to improvising within a style.
+
+  A caution on scope. Each of these is a lifetime of study compressed into an
+  orientation. The goal here is a working model and enough respect to know what
+  you do not know, not mastery.
+
+submodules:
+  - id: cuisine.how-cuisines-work
+    title: How Cuisines Are Structured
+    tier: 2
+    prereqs: [flavor.layering, prep.aromatic-bases]
+    why: The meta-lesson. Fat plus acid plus aromatic base plus spice profile plus starch is a template you can fill in for any tradition.
+    practice: Take one dish and rebuild it in two traditions by swapping the template variables. Log the changes.
+
+  - id: cuisine.french
+    title: French Technique
+    tier: 2
+    prereqs: [cuisine.how-cuisines-work, sauce.mother-sauces]
+    why: Not the best cuisine, but the one whose vocabulary the rest of professional cooking borrowed. Worth knowing as a shared language.
+    practice: Cook a classic French preparation with attention to technique. Log where precision mattered.
+
+  - id: cuisine.italian
+    title: Italian
+    tier: 2
+    prereqs: [cuisine.how-cuisines-work, prep.pasta]
+    why: Restraint and ingredient quality over technique. A useful corrective to the instinct that more steps means better food.
+    practice: Cook a dish with five or fewer ingredients. Log whether restraint helped or exposed weak ingredients.
+
+  - id: cuisine.mexican
+    title: Mexican
+    tier: 2
+    prereqs: [cuisine.how-cuisines-work, flavor.heat-spice]
+    why: Chile as a flavor system rather than a heat source, plus toasting and grinding as foundational technique.
+    practice: Build a sauce from dried chiles you toasted and rehydrated. Log each chile's contribution.
+
+  - id: cuisine.chinese
+    title: Chinese
+    tier: 2
+    prereqs: [cuisine.how-cuisines-work, heat.saute]
+    why: Velveting, wok heat, and the sequencing of aromatics. Also the clearest demonstration that regional variation is the norm, not the exception.
+    practice: Stir-fry with full mise en place and high heat. Log your sequence and the result.
+
+  - id: cuisine.middle-eastern
+    title: Middle Eastern and Levantine
+    tier: 2
+    prereqs: [cuisine.how-cuisines-work, flavor.acid, flavor.spices]
+    why: Acid, herbs used as vegetables, and spice blends. A strong model for making vegetables the center of a plate.
+    practice: Cook a vegetable-centered meal in this idiom. Log how you built satisfaction without meat.
+
+  - id: cuisine.american-regional
+    title: American Regional
+    tier: 2
+    prereqs: [cuisine.how-cuisines-work]
+    why: Distinct regional systems with real internal logic, and the tradition you are most likely to be cooking inside already.
+    practice: Cook a regional dish and research its actual origin. Log what surprised you.
+
+  - id: cuisine.japanese
+    title: Japanese
+    tier: 3
+    prereqs: [cuisine.how-cuisines-work, flavor.umami]
+    why: Dashi as an umami foundation, precision of cut, and subtraction as a technique.
+    practice: Make dashi and build a simple dish on it. Log the depth relative to the ingredient count.
+
+  - id: cuisine.indian
+    title: Indian Subcontinent
+    tier: 3
+    prereqs: [cuisine.how-cuisines-work, flavor.spices, flavor.layering]
+    why: The most sophisticated spice sequencing in world cooking. Bloom order and timing are the entire architecture.
+    practice: Cook a dish with staged spice additions. Log the order and what each stage contributed.
+
+  - id: cuisine.thai-sea
+    title: Thai and Southeast Asian
+    tier: 3
+    prereqs: [cuisine.how-cuisines-work, flavor.pairing]
+    why: Explicit simultaneous balance of salty, sour, sweet, spicy, and bitter. The most direct training available in tasting and adjusting.
+    practice: Build a dish balancing four tastes at once. Log each adjustment until it landed.
+
+  - id: cuisine.spanish
+    title: Spanish and Iberian
+    tier: 3
+    prereqs: [cuisine.how-cuisines-work, prep.aromatic-bases]
+    why: Sofrito, preserved ingredients, and rice technique. A different route to depth than French stock-building.
+    practice: Build a sofrito and a dish on top of it. Log the time invested versus the depth gained.
+
+  - id: cuisine.west-african
+    title: West African
+    tier: 3
+    prereqs: [cuisine.how-cuisines-work, flavor.layering]
+    why: Deeply layered stews, distinctive aromatic bases, and a major and under-taught influence on food across the Americas.
+    practice: Cook a stew in this tradition. Log the base construction and how the layers built.

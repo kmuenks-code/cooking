@@ -1,0 +1,72 @@
+id: dish-construction
+order: 9
+title: Dish Construction
+question: "How do components become a dish instead of a pile of food?"
+description: >
+  The bridge module. Everything before this teaches components. This teaches
+  assembly, which is the last thing standing between following recipes and
+  writing them.
+
+submodules:
+  - id: dish.anatomy
+    title: The Anatomy of a Dish
+    tier: 2
+    prereqs: [sauce.what-a-sauce-does, flavor.texture-contrast]
+    why: Most plates decompose into protein or center, starch, vegetable, sauce, and a texture or acid accent. Seeing the slots is what lets you fill them yourself.
+    practice: Break three dishes you have eaten into component slots. Then build one from empty slots. Log the result.
+
+  - id: dish.balance
+    title: Balancing a Plate
+    tier: 2
+    prereqs: [dish.anatomy, flavor.pairing]
+    why: Richness needs acid, softness needs crunch, intensity needs a neutral. Balance is diagnosable, not intuitive.
+    practice: Build a plate, identify what it is missing, and fix it. Log the diagnosis and the fix.
+
+  - id: dish.texture
+    title: Designing Texture Contrast
+    tier: 2
+    prereqs: [dish.balance, prep.crunch-elements]
+    why: Texture monotony is the most common flaw in home cooking and the one people least often name.
+    practice: Cook a dish deliberately containing three textures. Log whether the contrast registered.
+
+  - id: dish.garnish
+    title: Garnish With a Purpose
+    tier: 2
+    prereqs: [dish.balance]
+    why: A garnish should contribute acid, crunch, freshness, or heat. If it only adds color, cut it.
+    practice: Add a functional garnish to a finished dish. Log what job it did.
+
+  - id: dish.portioning
+    title: Portioning and Yield
+    tier: 2
+    prereqs: [found.measuring]
+    why: How much per person, how components scale relative to each other, and why doubling a dish rarely means doubling everything.
+    practice: Cook for a specific number of people. Log planned versus actual yield.
+
+  - id: dish.plating
+    title: Plating
+    tier: 2
+    prereqs: [dish.balance]
+    why: Height, negative space, and sauce placement change how a dish eats, not only how it looks. Bite composition is the real goal.
+    practice: Plate the same dish two ways. Log whether the eating experience differed.
+
+  - id: dish.leftovers
+    title: Leftovers and Second Life
+    tier: 2
+    prereqs: [dish.anatomy, ingr.storage]
+    why: Treating leftovers as components rather than as repeat meals is a direct rehearsal for pantry-first cooking.
+    practice: Turn a leftover into a structurally different dish. Log the transformation.
+
+  - id: dish.temperature
+    title: Temperature Contrast
+    tier: 3
+    prereqs: [dish.texture]
+    why: Hot against cool is an under-used contrast axis that can carry a dish on its own.
+    practice: Build a dish with deliberate temperature contrast. Log the effect.
+
+  - id: dish.multi-component
+    title: Building a Full Meal
+    tier: 3
+    prereqs: [dish.balance, found.timing-sequencing, dish.portioning]
+    why: Multiple dishes that complement rather than compete, all arriving at the right temperature at the same time.
+    practice: Cook a three-dish meal designed to work together. Log the plan and where it broke.

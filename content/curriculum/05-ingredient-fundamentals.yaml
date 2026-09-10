@@ -1,0 +1,108 @@
+id: ingredient-fundamentals
+order: 5
+title: Ingredient Fundamentals
+question: "What is this ingredient made of, and what will heat do to it?"
+description: >
+  Structure predicts behavior. Once you know that an ingredient is mostly water
+  in rigid cells, or mostly collagen, or mostly starch, you can predict how it
+  will respond to any method without having cooked it before. This module is what
+  makes pantry-first cooking possible later.
+
+submodules:
+  - id: ingr.shopping-selection
+    title: Shopping and Selecting
+    tier: 1
+    prereqs: []
+    why: Judging freshness and quality by sight, smell, and feel. Recipe results are capped by what you brought home.
+    practice: Buy one ingredient by deliberate inspection. Log what you checked and how it cooked.
+
+  - id: ingr.storage
+    title: Storage and Shelf Life
+    tier: 1
+    prereqs: [ingr.shopping-selection, found.safety-sanitation]
+    why: Most waste is a storage failure. Knowing what wants cold, dry, dark, or airflow changes your grocery economics.
+    practice: Store one item two ways for several days. Log the difference in condition.
+
+  - id: ingr.alliums
+    title: Alliums
+    tier: 1
+    prereqs: [knife.onion-dice]
+    why: Onion, garlic, shallot, leek. The most-used ingredient family in savory cooking and the most sensitive to cut and heat.
+    practice: Use three different alliums as a base for the same dish. Log the flavor difference.
+
+  - id: ingr.vegetables
+    title: Vegetable Structure and Cooking Behavior
+    tier: 1
+    prereqs: [heat.dry-vs-moist]
+    why: Cell walls, water content, starch, and sugar predict whether a vegetable collapses, crisps, or caramelizes.
+    practice: Cook a waxy and a starchy vegetable identically. Log how each held up.
+
+  - id: ingr.eggs
+    title: Eggs
+    tier: 1
+    prereqs: [found.heat-control]
+    why: The most technically instructive ingredient in the kitchen. Protein coagulation, emulsification, aeration, and thickening all in one item.
+    practice: Cook eggs three ways at three heat levels. Log curd size and texture against heat.
+
+  - id: ingr.dairy-fats
+    title: Dairy and Fats
+    tier: 1
+    prereqs: [flavor.fat]
+    why: Fat content and protein content decide whether dairy thickens, splits, or browns. This is why cream behaves and milk curdles.
+    practice: Add dairy to an acidic hot liquid, once low-fat and once high-fat. Log which broke.
+
+  - id: ingr.poultry
+    title: Poultry
+    tier: 1
+    prereqs: [found.doneness]
+    why: White versus dark meat is a difference in muscle use, fat, and connective tissue, which is why they want different temperatures.
+    practice: Cook breast and thigh together to the same finish. Log what each needed.
+
+  - id: ingr.starches-grains
+    title: Rice, Grains, and Starch Behavior
+    tier: 1
+    prereqs: [heat.boiling-simmering]
+    why: Starch gelatinization and amylose content explain fluffy versus sticky versus creamy. It is one variable, not a set of unrelated recipes.
+    practice: Cook a high-amylose and a low-amylose rice the same way. Log texture.
+
+  - id: ingr.muscle-structure
+    title: Meat Structure and Why Cuts Differ
+    tier: 2
+    prereqs: [ingr.poultry, heat.braising]
+    why: Muscle fiber, fat, and collagen content determine whether a cut wants fast dry heat or slow moist heat. This one model replaces memorizing cuts.
+    practice: Cook a tender cut fast and a tough cut slow. Log why each method suited its cut.
+
+  - id: ingr.red-meat-cuts
+    title: Beef, Pork, and Lamb Cuts
+    tier: 2
+    prereqs: [ingr.muscle-structure]
+    why: Where a cut sits on the animal predicts its structure, which predicts its method and its price.
+    practice: Buy an unfamiliar cut, reason out its method from its structure, and cook it. Log whether you were right.
+
+  - id: ingr.fish-shellfish
+    title: Fish and Shellfish
+    tier: 2
+    prereqs: [ingr.muscle-structure, heat.steaming-poaching]
+    why: Fish has almost no connective tissue and short muscle fibers, so it cooks fast and overcooks faster. Different rules entirely.
+    practice: Cook a fish fillet to just-done. Log the visual cue you used and the internal temperature.
+
+  - id: ingr.legumes
+    title: Legumes
+    tier: 2
+    prereqs: [heat.boiling-simmering]
+    why: Soaking, salt, acid, and age all change cooking time. Most bean failures are chemistry, not technique.
+    practice: Cook beans with salt from the start. Log time to tender and skin condition.
+
+  - id: ingr.flour-gluten
+    title: Flour and Gluten
+    tier: 2
+    prereqs: [found.measuring]
+    why: Protein content and hydration decide structure. The same variable governs bread, pasta, pastry, and thickening.
+    practice: Mix one dough minimally and one thoroughly. Log the texture difference.
+
+  - id: ingr.seasonality
+    title: Seasonality and Sourcing
+    tier: 2
+    prereqs: [ingr.shopping-selection, ingr.vegetables]
+    why: In-season produce needs less intervention. Knowing the calendar reduces how hard you have to cook.
+    practice: Cook one ingredient at peak season with minimal treatment. Log how little it needed.

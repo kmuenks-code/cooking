@@ -1,0 +1,101 @@
+id: flavor-fundamentals
+order: 4
+title: Flavor Fundamentals
+question: "Why does this taste flat, and what do I add to fix it?"
+description: >
+  The diagnostic layer. Most home cooking is not underseasoned in the sense of
+  needing more of everything. It is missing one specific axis, usually salt or
+  acid, and learning to name which axis is missing is what makes cooking without
+  a recipe possible.
+
+submodules:
+  - id: flavor.salt
+    title: Salt
+    tier: 1
+    prereqs: [found.tasting-and-adjusting]
+    why: Salt does not only make food salty. It suppresses bitterness, amplifies aroma, and changes texture through diffusion. Timing matters as much as amount.
+    practice: Salt one dish early and the same dish only at the end. Log the difference in taste and texture.
+
+  - id: flavor.acid
+    title: Acid
+    tier: 1
+    prereqs: [found.tasting-and-adjusting]
+    why: The most under-used correction in home cooking. Acid provides contrast and lift, and it is usually what a rich dish is missing.
+    practice: Cook something rich, taste it, then add acid at the end. Log the before and after.
+
+  - id: flavor.fat
+    title: Fat as Flavor
+    tier: 1
+    prereqs: [heat.fat-as-medium]
+    why: Fat carries aroma compounds to your palate, coats the tongue, and controls how long flavor lingers. Different fats taste like different things.
+    practice: Finish the same dish with three fats (olive oil, butter, a neutral oil). Log mouthfeel and aroma.
+
+  - id: flavor.aromatics-alliums
+    title: Aromatics and Alliums
+    tier: 1
+    prereqs: [knife.onion-dice, heat.saute]
+    why: How you cut and how long you cook alliums decides whether they read as sharp, sweet, or invisible. The base note of most savory cooking.
+    practice: Cook garlic three ways (raw, briefly bloomed, slowly sweated). Log the flavor of each.
+
+  - id: flavor.herbs
+    title: Herbs, Fresh and Dried
+    tier: 1
+    prereqs: [knife.herbs-chiffonade]
+    why: Hardy herbs want heat and time, delicate herbs want to be added last. Dried is not a lesser fresh, it is a different ingredient.
+    practice: Add a delicate herb at the start of one dish and the end of another. Log aroma retention.
+
+  - id: flavor.umami
+    title: Umami and Savory Depth
+    tier: 2
+    prereqs: [flavor.salt]
+    why: The axis people reach for salt to fix when salt is not the answer. Glutamates and nucleotides multiply each other, which is why certain pairings feel like more than the sum.
+    practice: Add an umami source (anchovy, soy, tomato paste, parmesan, mushroom) to a flat dish. Log the change.
+
+  - id: flavor.sweetness
+    title: Sweetness and Balance
+    tier: 2
+    prereqs: [flavor.acid]
+    why: Sugar is a balancing tool against acid and bitterness far more often than it is a flavor in savory cooking.
+    practice: Balance an overly acidic dish with a small amount of sweetness. Log how much it took.
+
+  - id: flavor.bitterness
+    title: Bitterness and Its Uses
+    tier: 2
+    prereqs: [flavor.sweetness]
+    why: Bitterness adds complexity and stops richness from becoming cloying. Knowing when it is a fault versus a feature is the skill.
+    practice: Cook a bitter ingredient and balance it with fat, salt, or sweetness. Log what worked.
+
+  - id: flavor.spices
+    title: Spices, Toasting, and Blooming
+    tier: 2
+    prereqs: [heat.fat-as-medium]
+    why: Most spice flavor compounds are fat-soluble and heat-activated. Adding dry spice to liquid wastes most of what you paid for.
+    practice: Bloom spices in fat for one dish and stir them into liquid for another. Log aroma and depth.
+
+  - id: flavor.heat-spice
+    title: Chile Heat
+    tier: 2
+    prereqs: [flavor.fat]
+    why: Capsaicin is fat-soluble and builds cumulatively. Different chiles bring different flavors, not just different intensities.
+    practice: Use two different chiles at similar heat levels. Log the flavor difference beyond heat.
+
+  - id: flavor.layering
+    title: Layering Flavor Through the Cook
+    tier: 2
+    prereqs: [flavor.salt, flavor.aromatics-alliums, flavor.spices]
+    why: Seasoning at every stage builds depth that end-seasoning cannot replicate. Different additions want different entry points.
+    practice: Season one dish at three stages and an identical dish only at the end. Log the depth difference.
+
+  - id: flavor.texture-contrast
+    title: Texture as a Flavor Dimension
+    tier: 3
+    prereqs: [flavor.layering]
+    why: A dish can be correctly seasoned and still boring. Crunch against soft is a flavor decision, not a plating one.
+    practice: Add a crunchy element to a soft dish. Log whether it changed how the dish read.
+
+  - id: flavor.pairing
+    title: Flavor Pairing and Affinity
+    tier: 3
+    prereqs: [flavor.layering, flavor.umami, flavor.bitterness]
+    why: Why some combinations feel inevitable. Shared aroma compounds, cultural convention, and contrast logic, and how to reason toward new pairings.
+    practice: Build a dish around a pairing you reasoned out rather than read. Log whether it worked and why.

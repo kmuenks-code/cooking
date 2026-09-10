@@ -1,0 +1,73 @@
+id: troubleshooting
+order: 10
+title: Troubleshooting
+question: "Something is wrong. What is it, and can I still save it?"
+description: >
+  Diagnosis as a skill in its own right. A cook who can taste a dish and name
+  what is missing has a fundamentally different relationship to cooking than one
+  who can only tell that something is off. Every sub-module here is a symptom,
+  a cause, and a rescue.
+
+submodules:
+  - id: trouble.blandness
+    title: Diagnosing Blandness
+    tier: 2
+    prereqs: [flavor.salt, flavor.acid, flavor.umami]
+    why: Flat almost always means missing salt, missing acid, or missing umami. Learning to tell which one is the single most useful diagnostic in cooking.
+    practice: Cook something flat on purpose, then diagnose and fix it. Log which axis it was.
+
+  - id: trouble.oversalting
+    title: Over- and Under-Salting
+    tier: 2
+    prereqs: [flavor.salt, found.tasting-and-adjusting]
+    why: What actually works when a dish is too salty, and the widely repeated fixes that do not.
+    practice: Over-salt a small batch and attempt a rescue. Log what helped and what did not.
+
+  - id: trouble.protein-doneness
+    title: Overcooked and Undercooked Protein
+    tier: 2
+    prereqs: [found.doneness, ingr.muscle-structure]
+    why: Undercooked is fixable, overcooked is a salvage operation. Knowing which you are in determines the move.
+    practice: Salvage an overcooked protein by changing its format. Log the approach.
+
+  - id: trouble.soggy-vs-crisp
+    title: Soggy When It Should Be Crisp
+    tier: 2
+    prereqs: [heat.searing-maillard, heat.saute]
+    why: Almost always moisture, crowding, or temperature. Three causes, three different fixes.
+    practice: Reproduce a soggy result, identify the cause, and correct it in a second attempt. Log both.
+
+  - id: trouble.burnt-bitter
+    title: Burnt and Bitter
+    tier: 2
+    prereqs: [flavor.bitterness, found.heat-control]
+    why: When bitterness can be balanced and when the dish is genuinely gone. Knowing when to stop is a skill.
+    practice: Balance a mildly bitter dish with fat, salt, or sweetness. Log the ratio that worked.
+
+  - id: trouble.texture-failures
+    title: Texture Failures
+    tier: 2
+    prereqs: [ingr.vegetables, ingr.starches-grains]
+    why: Mushy, tough, grainy, gluey. Each has a specific cause in structure or method, not in bad luck.
+    practice: Diagnose a texture failure back to its cause. Log the mechanism.
+
+  - id: trouble.timing
+    title: Timing Failures
+    tier: 2
+    prereqs: [found.timing-sequencing]
+    why: Components finishing at different times. Holding strategies, reheating without damage, and what to sacrifice.
+    practice: Deliberately mistime a meal and recover it. Log the holding decisions.
+
+  - id: trouble.broken-sauces
+    title: Rescuing Broken Sauces
+    tier: 3
+    prereqs: [sauce.emulsion-science]
+    why: Most broken emulsions are recoverable if you understand why they broke. This is the payoff of the emulsion model.
+    practice: Break and rescue a sauce under time pressure during an actual meal. Log the recovery.
+
+  - id: trouble.reading-adjusting
+    title: Reading a Dish and Adjusting Mid-Cook
+    tier: 3
+    prereqs: [trouble.blandness, trouble.soggy-vs-crisp, found.tasting-and-adjusting]
+    why: Catching problems while they are still cheap to fix. The habit that makes the rest of this module rarely necessary.
+    practice: Cook a dish, adjusting at every stage based on tasting. Log every intervention.

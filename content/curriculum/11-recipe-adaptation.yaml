@@ -1,0 +1,65 @@
+id: recipe-adaptation
+order: 11
+title: Recipe Adaptation
+question: "How do I change a recipe on purpose instead of by accident?"
+description: >
+  The transitional module. You still start from a recipe, but you stop treating
+  it as fixed. Every skill here is about understanding which parts of a recipe
+  are load-bearing and which are merely one person's preference.
+
+submodules:
+  - id: adapt.scaling
+    title: Scaling Recipes
+    tier: 2
+    prereqs: [found.measuring, dish.portioning]
+    why: Seasoning, cooking time, and pan surface area do not scale linearly with ingredients. This is why doubled recipes fail.
+    practice: Double a recipe and adjust what does not scale. Log every non-linear adjustment.
+
+  - id: adapt.ingredient-subs
+    title: Ingredient Substitutions
+    tier: 2
+    prereqs: [ingr.vegetables, flavor.pairing]
+    why: Substitute by function (acid, fat, aromatic, bulk, binder) rather than by name, and almost anything has a stand-in.
+    practice: Cook a recipe substituting two ingredients by function. Log your reasoning and the result.
+
+  - id: adapt.equipment-subs
+    title: Equipment Substitutions
+    tier: 2
+    prereqs: [found.pan-selection, heat.transfer-fundamentals]
+    why: Recipes assume equipment you may not own. Matching the heat behavior rather than the appliance is what makes it work.
+    practice: Cook a recipe with different equipment than specified. Log the adjustments required.
+
+  - id: adapt.time
+    title: Adapting for Time
+    tier: 2
+    prereqs: [found.timing-sequencing, adapt.ingredient-subs]
+    why: Which steps genuinely buy flavor and which are habit. Knowing what to cut is knowing what each step contributes.
+    practice: Cut a recipe's time significantly. Log what you dropped and what it cost.
+
+  - id: adapt.seasoning-to-taste
+    title: Adjusting Seasoning Away From the Recipe
+    tier: 2
+    prereqs: [found.tasting-and-adjusting, trouble.blandness]
+    why: Written quantities are one cook's palate and one brand of salt. Treating them as a starting point is the first real independence.
+    practice: Cook a recipe seasoning entirely by taste. Log how far you ended from the written amounts.
+
+  - id: adapt.dietary
+    title: Adapting for Dietary Constraints
+    tier: 3
+    prereqs: [adapt.ingredient-subs, flavor.umami]
+    why: Removing meat, dairy, or gluten removes specific functions. You have to replace the function, not the ingredient.
+    practice: Adapt a dish for a real constraint. Log which functions you had to replace and how.
+
+  - id: adapt.converting-methods
+    title: Converting Between Methods
+    tier: 3
+    prereqs: [heat.braising, heat.low-temp-sous-vide, adapt.equipment-subs]
+    why: Oven braise to stovetop, stew to pressure cooker, roast to grill. Same transformation, different heat delivery.
+    practice: Convert a recipe to a different cooking method. Log the reasoning and the outcome.
+
+  - id: adapt.reverse-engineering
+    title: Reverse-Engineering a Dish
+    tier: 3
+    prereqs: [cuisine.how-cuisines-work, dish.anatomy, flavor.pairing]
+    why: Eat something, decompose it into components and techniques, rebuild it. The final step before designing from scratch.
+    practice: Recreate a restaurant dish from memory alone. Log your decomposition and where you were wrong.

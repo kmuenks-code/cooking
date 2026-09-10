@@ -1,0 +1,94 @@
+id: knife-skills
+order: 2
+title: Knife Skills
+question: "How do I turn ingredients into the shapes that cooking needs?"
+description: >
+  Cutting is not decoration. Shape determines surface area, which determines
+  cooking rate, browning, and how much of an ingredient's flavor ends up in the
+  dish instead of staying locked inside it. Every cut here exists because it does
+  something different to the food.
+
+submodules:
+  - id: knife.anatomy-selection
+    title: Knife Anatomy and Selection
+    tier: 1
+    prereqs: [found.safety-sanitation]
+    why: What each part of the blade is for, and why three knives cover almost everything.
+    practice: Use one knife for a full prep session. Log where it felt right and where you wanted a different blade.
+
+  - id: knife.grip-stance
+    title: Grip, Stance, and Board Setup
+    tier: 1
+    prereqs: [knife.anatomy-selection]
+    why: Pinch grip and claw hand are about control and speed, not tradition. Board height and stability prevent most accidents.
+    practice: Prep a full mirepoix using pinch grip and claw throughout. Log where the grip broke down.
+
+  - id: knife.cutting-motions
+    title: The Cutting Motions
+    tier: 1
+    prereqs: [knife.grip-stance]
+    why: Push cut, draw cut, rock chop, and tap chop each suit different foods. The wrong one crushes instead of cutting.
+    practice: Cut three textures (soft herb, firm root, waxy vegetable). Log which motion worked for each.
+
+  - id: knife.onion-dice
+    title: Dicing an Onion
+    tier: 1
+    prereqs: [knife.cutting-motions]
+    why: The canonical cut. Grain direction changes pungency and how the onion breaks down, so this is where cutting starts affecting flavor.
+    practice: Dice two onions, one radially and one across the grain, then cook both the same way. Log the difference.
+
+  - id: knife.uniform-cuts
+    title: Uniform Cuts, Batonnet to Dice
+    tier: 2
+    prereqs: [knife.onion-dice]
+    why: Evenness is not aesthetic. Uneven pieces mean some burn while others stay raw, in the same pan, at the same time.
+    practice: Cut carrot to uniform quarter-inch dice and saute. Log how much size variation showed up as doneness variation.
+
+  - id: knife.rounds-bias
+    title: Rounds, Bias, and Oblique Cuts
+    tier: 2
+    prereqs: [knife.cutting-motions]
+    why: Angled cuts expose more surface area per piece, so more browning, faster cooking, better sauce adhesion.
+    practice: Cook one vegetable cut into rounds and again on the bias. Log browning and texture differences.
+
+  - id: knife.herbs-chiffonade
+    title: Herbs and Chiffonade
+    tier: 2
+    prereqs: [knife.cutting-motions]
+    why: Herbs bruise. A dull knife or too many passes turns basil black and dumps its aroma onto the board instead of the plate.
+    practice: Chiffonade basil with a sharp knife and again with a dull one. Log color, smell, and what is left on the board.
+
+  - id: knife.supreming
+    title: Supreming and Segmenting Citrus
+    tier: 2
+    prereqs: [knife.cutting-motions]
+    why: Removing membrane changes texture and lets citrus act as a component rather than a garnish.
+    practice: Supreme an orange or grapefruit into a salad or sauce. Log the juice you saved versus lost.
+
+  - id: knife.sharpening
+    title: Sharpening and Honing
+    tier: 2
+    prereqs: [knife.anatomy-selection]
+    why: A dull knife is more dangerous, slower, and worse for food. It crushes cells, accelerating both pungency and spoilage.
+    practice: Hone and sharpen your main knife, then repeat a cut you did before. Log the difference.
+
+  - id: knife.brunoise
+    title: Brunoise and Fine Dice
+    tier: 3
+    prereqs: [knife.uniform-cuts, knife.sharpening]
+    why: Very small, very even cuts that dissolve into a sauce or add texture without being identifiable.
+    practice: Make a brunoise for a sauce or vinaigrette. Log evenness and how it behaved in the finished dish.
+
+  - id: knife.poultry-butchery
+    title: Breaking Down Poultry
+    tier: 3
+    prereqs: [knife.cutting-motions, knife.sharpening]
+    why: Cheaper, better parts control, and you end up with bones for stock. You cut joints, not bones.
+    practice: Break down a whole chicken into eight pieces and save the back for stock. Log where you struggled.
+
+  - id: knife.fish-fabrication
+    title: Fish Fabrication
+    tier: 3
+    prereqs: [knife.poultry-butchery]
+    why: Fillet, pin-bone, portion. Fish structure is nothing like land animals and the knife work reflects that.
+    practice: Fillet a whole round fish. Log yield and what you left on the bone.

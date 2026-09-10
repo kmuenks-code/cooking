@@ -1,0 +1,116 @@
+id: sauces-and-emulsions
+order: 7
+title: Sauces and Emulsions
+question: "How do I make the thing that ties a plate together?"
+description: >
+  A sauce adds moisture, fat, seasoning, and contrast in one move. Most home
+  cooks treat sauces as separate recipes to memorize. They are better understood
+  as four or five mechanisms (reduction, starch thickening, emulsion, puree)
+  applied to different liquids.
+
+submodules:
+  - id: sauce.what-a-sauce-does
+    title: What a Sauce Is Actually For
+    tier: 1
+    prereqs: [flavor.salt, flavor.acid, flavor.fat]
+    why: Moisture, richness, seasoning, and contrast. Naming the job lets you decide whether a dish needs a sauce at all.
+    practice: Serve one dish with and without a sauce. Log what the sauce added or failed to add.
+
+  - id: sauce.vinaigrette
+    title: Vinaigrette
+    tier: 1
+    prereqs: [sauce.what-a-sauce-does, flavor.acid]
+    why: The simplest emulsion. Ratio, agitation, and emulsifier are all visible here, which makes it the best first sauce.
+    practice: Make a vinaigrette and adjust the ratio by taste. Log your final ratio and how long it held.
+
+  - id: sauce.fresh-sauces
+    title: Salsas and Fresh Uncooked Sauces
+    tier: 1
+    prereqs: [sauce.what-a-sauce-does, knife.uniform-cuts]
+    why: No heat, no thickening, just balance and cut size. Proof that a sauce is a balance problem before it is a technique problem.
+    practice: Make a fresh salsa and adjust it by tasting alone. Log each adjustment.
+
+  - id: sauce.pounded-sauces
+    title: Pesto and Pounded Sauces
+    tier: 1
+    prereqs: [flavor.herbs, flavor.fat]
+    why: Mechanical rupture releases aroma differently than blades do. Also a lesson in oxidation and heat from friction.
+    practice: Make a pounded sauce and a blended one. Log color, texture, and aroma.
+
+  - id: sauce.tomato
+    title: Tomato Sauce
+    tier: 1
+    prereqs: [prep.aromatic-bases, flavor.umami]
+    why: Reduction, acid balance, and how cooking time transforms brightness into depth. One sauce, many destinations.
+    practice: Cook a tomato sauce and taste at fifteen, thirty, and sixty minutes. Log the changes.
+
+  - id: sauce.pan-sauce
+    title: Pan Sauce
+    tier: 2
+    prereqs: [heat.searing-maillard, sauce.what-a-sauce-does, flavor.acid]
+    recommended: [prep.stock]
+    why: The highest return-per-minute technique in cooking. Fond, deglaze, reduce, mount. Five minutes and no extra pan.
+    practice: Sear a protein and build a pan sauce from the fond. Log what you deglazed with and the final consistency.
+
+  - id: sauce.reduction
+    title: Reduction and Glaze
+    tier: 2
+    prereqs: [sauce.pan-sauce]
+    why: Concentration by evaporation. It intensifies everything, including salt and bitterness, which is why you season after and not before.
+    practice: Reduce a liquid by half and taste at intervals. Log when it became too salty or too intense.
+
+  - id: sauce.monte-au-beurre
+    title: Mounting With Butter
+    tier: 2
+    prereqs: [sauce.pan-sauce, ingr.dairy-fats]
+    why: Cold butter whisked into warm liquid forms a temporary emulsion that adds gloss and body. Temperature control is the whole trick.
+    practice: Mount a sauce with butter, then deliberately break it with heat. Log both.
+
+  - id: sauce.mayonnaise
+    title: Mayonnaise and Cold Emulsions
+    tier: 2
+    prereqs: [ingr.eggs, sauce.vinaigrette]
+    why: A stable emulsion built by slow addition and mechanical force. The clearest demonstration of what an emulsifier does.
+    practice: Make mayonnaise by hand, then break it and rescue it. Log what caused the break.
+
+  - id: sauce.mother-sauces
+    title: The Mother Sauces as a System
+    tier: 2
+    prereqs: [prep.roux, prep.stock]
+    why: Not five recipes to memorize. A classification of thickening mechanisms and base liquids that maps onto almost any sauce.
+    practice: Make one mother sauce and turn it into two derivatives. Log what each addition changed.
+
+  - id: sauce.bechamel-veloute
+    title: Bechamel and Veloute
+    tier: 2
+    prereqs: [sauce.mother-sauces, prep.roux]
+    why: Roux plus liquid. Ratio determines thickness, and cooking out the flour is what separates smooth from pasty.
+    practice: Make a roux-thickened sauce at two ratios. Log thickness and any raw flour taste.
+
+  - id: sauce.gravy
+    title: Pan Gravy
+    tier: 2
+    prereqs: [sauce.pan-sauce, prep.roux]
+    why: Roasting drippings plus roux plus stock. Where two techniques you already know combine into a third.
+    practice: Make gravy from roast drippings. Log the fat-to-flour ratio and final consistency.
+
+  - id: sauce.purees
+    title: Purees and Coulis
+    tier: 2
+    prereqs: [ingr.vegetables, sauce.what-a-sauce-does]
+    why: Thickening by solids rather than starch or fat. Texture comes from the blend and the strain.
+    practice: Make a vegetable puree sauce. Log whether you strained it and how it changed.
+
+  - id: sauce.hollandaise
+    title: Hollandaise and Warm Emulsions
+    tier: 3
+    prereqs: [sauce.mayonnaise, sauce.monte-au-beurre, found.doneness]
+    why: The most fragile common sauce. Egg yolk emulsification within a narrow temperature window, with no margin.
+    practice: Make hollandaise. Log your heat management and whether it broke.
+
+  - id: sauce.emulsion-science
+    title: Why Emulsions Break, and How to Fix Them
+    tier: 3
+    prereqs: [sauce.hollandaise, sauce.mayonnaise]
+    why: One model covering every emulsion. Droplet size, emulsifier, temperature, and shear, plus the standard rescues.
+    practice: Break three different emulsions on purpose and rescue each. Log what worked.

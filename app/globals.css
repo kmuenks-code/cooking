@@ -1,0 +1,402 @@
+:root {
+  --bg: #faf8f5;
+  --surface: #ffffff;
+  --surface-2: #f2efea;
+  --border: #e2ddd4;
+  --border-strong: #cdc5b8;
+  --text: #23201c;
+  --text-dim: #6d675e;
+  --text-faint: #948d82;
+  --accent: #a8501e;
+  --accent-soft: #f5e6dc;
+  --ok: #3f6b45;
+  --ok-soft: #e4efe4;
+  --warn: #8a6d1f;
+  --warn-soft: #f7efd8;
+  --locked: #b3aca1;
+  --radius: 10px;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #171614;
+    --surface: #201e1b;
+    --surface-2: #2a2724;
+    --border: #35312c;
+    --border-strong: #4a453e;
+    --text: #ece7e0;
+    --text-dim: #a29a8f;
+    --text-faint: #7d766c;
+    --accent: #e08b53;
+    --accent-soft: #33241a;
+    --ok: #7fb188;
+    --ok-soft: #1e2a20;
+    --warn: #d3b25e;
+    --warn-soft: #2c2517;
+    --locked: #57524b;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #171614;
+  --surface: #201e1b;
+  --surface-2: #2a2724;
+  --border: #35312c;
+  --border-strong: #4a453e;
+  --text: #ece7e0;
+  --text-dim: #a29a8f;
+  --text-faint: #7d766c;
+  --accent: #e08b53;
+  --accent-soft: #33241a;
+  --ok: #7fb188;
+  --ok-soft: #1e2a20;
+  --warn: #d3b25e;
+  --warn-soft: #2c2517;
+  --locked: #57524b;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  /* Stop iOS inflating text when the phone is turned sideways. */
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  /* A long id or URL must never widen the page on a phone. */
+  overflow-wrap: break-word;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  padding-left: max(24px, env(safe-area-inset-left));
+  padding-right: max(24px, env(safe-area-inset-right));
+}
+
+/* --- header --- */
+header.top {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  margin-bottom: 36px;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+header.top .inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+header.top .brand {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  font-size: 15px;
+}
+header.top nav { display: flex; gap: 20px; font-size: 14px; }
+header.top nav a { color: var(--text-dim); }
+header.top nav a:hover { color: var(--text); text-decoration: none; }
+header.top nav a.active { color: var(--text); font-weight: 550; }
+
+/* --- typography --- */
+h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 8px; }
+h2 { font-size: 20px; letter-spacing: -0.01em; margin: 40px 0 14px; }
+h3 { font-size: 16px; margin: 28px 0 10px; }
+.lede { color: var(--text-dim); font-size: 17px; margin: 0 0 8px; max-width: 68ch; }
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-faint);
+  margin-bottom: 6px;
+}
+
+/* --- cards --- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+.grid { display: grid; gap: 12px; }
+/* min() so a 360px-wide phone gets one full-bleed column instead of overflow. */
+.grid.two {
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+}
+
+.skill-card { display: block; color: inherit; }
+.skill-card:hover { border-color: var(--border-strong); text-decoration: none; }
+.skill-card .title { font-weight: 600; margin-bottom: 4px; }
+.skill-card .why { color: var(--text-dim); font-size: 14px; }
+.skill-card .meta {
+  display: flex; gap: 8px; align-items: center;
+  margin-bottom: 8px; flex-wrap: wrap;
+}
+
+/* --- badges --- */
+.badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2.5px 7px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.badge.tier { background: var(--surface-2); color: var(--text-faint); }
+.badge.module { background: var(--surface-2); color: var(--text-dim); }
+.badge.available { background: var(--accent-soft); color: var(--accent); }
+.badge.studied { background: var(--warn-soft); color: var(--warn); }
+.badge.practiced { background: var(--ok-soft); color: var(--ok); }
+.badge.locked { background: var(--surface-2); color: var(--locked); }
+.badge.draft { background: var(--warn-soft); color: var(--warn); }
+
+/* --- stats --- */
+.stats { display: flex; gap: 28px; flex-wrap: wrap; margin: 20px 0 8px; }
+.stat .n { font-size: 26px; font-weight: 650; letter-spacing: -0.02em; }
+.stat .l {
+  font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.07em; color: var(--text-faint);
+}
+
+.bar { height: 5px; background: var(--surface-2); border-radius: 3px; overflow: hidden; display: flex; }
+.bar .practiced { background: var(--ok); }
+.bar .studied { background: var(--warn); }
+
+/* --- buttons --- */
+button, .btn {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 550;
+  padding: 9px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  /* No 300ms tap delay, no double-tap zoom on a control. */
+  touch-action: manipulation;
+}
+button.quiet {
+  border-color: transparent;
+  background: none;
+  color: var(--text-dim);
+  padding-left: 0;
+  padding-right: 10px;
+  min-height: 36px;
+}
+button.quiet:hover { color: var(--accent); background: none; }
+button:hover, .btn:hover { background: var(--surface-2); text-decoration: none; }
+button.primary, .btn.primary {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+}
+:root[data-theme='dark'] button.primary,
+:root[data-theme='dark'] .btn.primary { color: #1a1512; }
+button.primary:hover, .btn.primary:hover { filter: brightness(1.08); background: var(--accent); }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* --- lesson prose --- */
+.prose { max-width: 72ch; font-size: 16.5px; }
+.prose h2 { font-size: 22px; margin: 44px 0 12px; }
+.prose h3 { font-size: 17px; margin: 30px 0 8px; }
+.prose p { margin: 0 0 18px; }
+.prose ul, .prose ol { margin: 0 0 18px; padding-left: 22px; }
+.prose li { margin-bottom: 7px; }
+.prose strong { font-weight: 650; }
+.prose code {
+  font-family: var(--mono); font-size: 0.87em;
+  background: var(--surface-2); padding: 1.5px 5px; border-radius: 4px;
+}
+.prose pre {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 16px; overflow-x: auto;
+  font-size: 13px; line-height: 1.55;
+}
+.prose pre code { background: none; padding: 0; font-size: inherit; }
+.prose blockquote {
+  border-left: 3px solid var(--border-strong); margin: 0 0 18px;
+  padding-left: 16px; color: var(--text-dim);
+}
+.table-wrap { overflow-x: auto; margin: 0 0 22px; }
+.prose table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+.prose th, .prose td {
+  border: 1px solid var(--border); padding: 8px 11px;
+  text-align: left; vertical-align: top;
+}
+.prose th { background: var(--surface-2); font-weight: 600; }
+
+/* --- recipe method --- */
+.method { padding-left: 22px; max-width: 72ch; }
+.method > li { margin-bottom: 14px; }
+.method p { margin: 0 0 8px; }
+
+/* --- video --- */
+.video { margin: 0 0 20px; }
+.video .frame {
+  position: relative; width: 100%; padding-top: 56.25%;
+  background: var(--surface-2); border-radius: var(--radius);
+  overflow: hidden; border: 1px solid var(--border);
+}
+.video .frame iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+}
+.video .cap { font-size: 13.5px; color: var(--text-dim); margin-top: 7px; }
+.video .cap .t { color: var(--text); font-weight: 550; }
+
+.placeholder {
+  border: 1px dashed var(--border-strong); border-radius: var(--radius);
+  padding: 14px 16px; color: var(--text-faint); font-size: 13.5px;
+  background: var(--surface-2);
+}
+.placeholder .k {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--warn); display: block; margin-bottom: 5px;
+}
+
+/* --- forms --- */
+textarea, input[type='text'], select {
+  /* 16px minimum — anything smaller makes iOS Safari zoom in on focus. */
+  font: inherit; font-size: 16px;
+  width: 100%; max-width: 100%; padding: 11px 12px;
+  border: 1px solid var(--border-strong); border-radius: 8px;
+  background: var(--bg); color: var(--text); resize: vertical;
+}
+textarea:focus, input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
+.field { margin-bottom: 14px; }
+.hint { font-size: 13px; color: var(--text-dim); margin-top: 5px; }
+
+/* --- misc --- */
+.rule { border: 0; border-top: 1px solid var(--border); margin: 36px 0; }
+.empty {
+  border: 1px dashed var(--border-strong); border-radius: var(--radius);
+  padding: 26px; text-align: center; color: var(--text-dim); font-size: 14.5px;
+}
+.issues {
+  border: 1px solid var(--warn); background: var(--warn-soft);
+  border-radius: var(--radius); padding: 12px 15px; margin-bottom: 24px; font-size: 14px;
+}
+.issues code { font-family: var(--mono); font-size: 12.5px; }
+.crumb { font-size: 13.5px; color: var(--text-dim); margin-bottom: 12px; }
+.mono {
+  font-family: var(--mono); font-size: 12.5px; color: var(--text-faint);
+  overflow-wrap: anywhere;
+}
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+
+
+/* --- phones -----------------------------------------------------------------
+   The nav moves out of the header and becomes a fixed bottom bar: this thing
+   gets read one-handed next to a hot pan, so the tabs belong under the thumb.
+   Same markup, CSS only. */
+@media (max-width: 720px) {
+  .shell {
+    padding: 0 16px 32px;
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+    /* Clear the bottom tab bar. */
+    padding-bottom: calc(88px + env(safe-area-inset-bottom));
+  }
+
+  header.top { margin-bottom: 24px; }
+  header.top .inner { padding: 12px 16px; gap: 12px; }
+  header.top .brand { font-size: 16px; }
+
+  header.top nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 60;
+    gap: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding-bottom: env(safe-area-inset-bottom);
+    /* Sits above the page, so give it a lift rather than a hard edge. */
+    box-shadow: 0 -1px 12px rgb(0 0 0 / 0.06);
+  }
+  header.top nav a {
+    text-align: center;
+    padding: 13px 4px;
+    font-size: 13px;
+    font-weight: 550;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header.top nav a.active {
+    color: var(--accent);
+    box-shadow: inset 0 2px 0 var(--accent);
+  }
+
+  h1 { font-size: 25px; }
+  h2 { font-size: 18px; margin: 30px 0 12px; }
+  .lede { font-size: 16px; }
+
+  /* Five stats in a readable block instead of a squeezed row: three across on
+     a normal phone, two on a small one. */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+    gap: 14px 10px;
+    margin: 18px 0 10px;
+  }
+  .stat .n { font-size: 22px; }
+  .stat .l { font-size: 10px; letter-spacing: 0.05em; }
+
+  .card { padding: 14px 15px; }
+  .empty { padding: 20px 16px; }
+
+  /* Full-width primary actions are easier to hit than inline ones. */
+  .chips .btn, .chips button { flex: 1 1 auto; }
+
+  .prose { font-size: 16.5px; }
+  .prose h2 { font-size: 20px; margin: 34px 0 10px; }
+  .prose pre { font-size: 12.5px; padding: 12px 13px; }
+  .prose table { font-size: 14px; }
+
+  .method { padding-left: 20px; }
+  .rule { margin: 28px 0; }
+}
+
+@media (max-width: 380px) {
+  header.top nav a { font-size: 12px; }
+}
+
+/* Hover styling is a lie on touch screens — it sticks after a tap. */
+@media (hover: none) {
+  button:hover, .btn:hover { background: var(--surface); }
+  button.primary:hover, .btn.primary:hover { filter: none; }
+  .skill-card:hover { border-color: var(--border); }
+}

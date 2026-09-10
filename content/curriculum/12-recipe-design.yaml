@@ -1,0 +1,65 @@
+id: recipe-design
+order: 12
+title: Recipe Design
+question: "Can I open the fridge and cook something good without looking anything up?"
+description: >
+  The goal of the whole curriculum. Nothing here is a new technique. Every
+  sub-module is a framework for deploying what you already know without a recipe
+  to lean on. Expect these to feel less like lessons and more like drills.
+
+submodules:
+  - id: design.ratios
+    title: Ratios and Formulas
+    tier: 3
+    prereqs: [found.measuring, prep.basic-doughs, sauce.vinaigrette]
+    why: A ratio is a recipe with the specifics removed. Once you hold a dozen ratios, you can generate infinite recipes from them.
+    practice: Cook three dishes from one ratio, varying only the ingredients. Log each.
+
+  - id: design.templates
+    title: Template Thinking
+    tier: 3
+    prereqs: [dish.anatomy, cuisine.how-cuisines-work, design.ratios]
+    why: Braise, stir-fry, grain bowl, soup, and pan-sear-with-sauce are templates with slots. Filling slots is faster than recalling recipes.
+    practice: Cook the same template three nights with different fillings. Log how much thinking each took.
+
+  - id: design.pantry-first
+    title: Pantry-First Cooking
+    tier: 3
+    prereqs: [design.templates, adapt.ingredient-subs, dish.leftovers]
+    why: Inverting the process. Start from what you have, identify which template it fits, and fill the gaps. This is the actual target skill.
+    practice: Cook dinner from what is on hand with no shopping and no recipe. Log your reasoning chain.
+
+  - id: design.flavor-architecture
+    title: Designing a Flavor Profile
+    tier: 3
+    prereqs: [flavor.pairing, dish.balance, cuisine.how-cuisines-work]
+    why: Deciding the flavor destination before you start cooking, then choosing techniques that get you there.
+    practice: Write a target flavor profile, then cook toward it. Log how close you landed.
+
+  - id: design.improvisation-drills
+    title: Improvisation Drills
+    tier: 3
+    prereqs: [design.pantry-first, design.flavor-architecture]
+    why: Deliberate constraint practice. Five ingredients, thirty minutes, one pan. Constraints force the frameworks to become reflexes.
+    practice: Run one constraint drill. Log the constraint, your plan, and the honest result.
+
+  - id: design.menu-design
+    title: Designing a Menu
+    tier: 3
+    prereqs: [dish.multi-component, design.templates]
+    why: Multiple dishes as one composition, balanced against each other and against your actual capacity to execute them.
+    practice: Design and cook a multi-course meal of your own design. Log the plan and the execution.
+
+  - id: design.documenting
+    title: Documenting Your Own Recipes
+    tier: 3
+    prereqs: [design.pantry-first]
+    why: Writing down what you improvised so it becomes repeatable. Also the point where you notice what you actually know.
+    practice: Write up a dish you invented so someone else could cook it. Log what was hard to articulate.
+
+  - id: design.capstone
+    title: Capstone
+    tier: 3
+    prereqs: [design.improvisation-drills, design.menu-design, design.documenting]
+    why: Cook a full meal for other people, from your own design, with no recipes at any point.
+    practice: Do it. Log the whole thing honestly, including what you would change.

@@ -1,0 +1,114 @@
+id: heat-and-methods
+order: 3
+title: Heating and Cooking Methods
+question: "What is heat actually doing to food, and how do I pick a method?"
+description: >
+  Every cooking method is a different answer to one question: how do I move
+  energy into food, and how fast? Once you can name what a method does, choosing
+  between them stops being a matter of following instructions.
+
+submodules:
+  - id: heat.transfer-fundamentals
+    title: How Heat Moves Into Food
+    tier: 1
+    prereqs: [found.heat-control]
+    why: Conduction, convection, and radiation each cook at different rates and produce different surfaces. This is the model underneath every method below.
+    practice: Cook one ingredient by two heat-transfer modes. Log surface and interior differences.
+
+  - id: heat.dry-vs-moist
+    title: Dry Heat Versus Moist Heat
+    tier: 1
+    prereqs: [heat.transfer-fundamentals]
+    why: Water caps temperature at 212F, which is below browning. This single fact explains why some methods brown and others never can.
+    practice: Cook the same vegetable roasted and steamed. Log color, flavor, and texture.
+
+  - id: heat.fat-as-medium
+    title: Fat as a Cooking Medium
+    tier: 1
+    prereqs: [heat.transfer-fundamentals]
+    why: Fat carries heat evenly, reaches browning temperatures, and dissolves flavor compounds water cannot. Smoke point sets your ceiling.
+    practice: Cook the same food in butter and in a high-smoke-point oil. Log browning, flavor, and any burning.
+
+  - id: heat.boiling-simmering
+    title: Boiling, Simmering, and Blanching
+    tier: 1
+    prereqs: [heat.dry-vs-moist]
+    why: The difference between a rolling boil and a bare simmer is the difference between shredded and intact. Blanching is a timing tool.
+    practice: Blanch a green vegetable and shock it. Log color and texture against the same vegetable boiled through.
+
+  - id: heat.searing-maillard
+    title: Searing and the Maillard Reaction
+    tier: 1
+    prereqs: [heat.fat-as-medium, found.pan-selection]
+    why: Browning is not "sealing in juices." It is a chemical reaction that creates hundreds of new flavor compounds, and it needs a dry surface and real heat.
+    practice: Sear a protein. Dry half the surface and leave half damp. Log the browning difference.
+
+  - id: heat.saute
+    title: Sauteing
+    tier: 1
+    prereqs: [heat.searing-maillard]
+    why: Small pieces, high heat, constant motion. Understanding pan crowding and evaporation is what keeps a saute from becoming a steam.
+    practice: Saute the same vegetable in a crowded pan and a spacious one. Log browning versus steaming.
+
+  - id: heat.roasting
+    title: Roasting
+    tier: 1
+    prereqs: [heat.dry-vs-moist]
+    why: Dry convection with radiant browning. Oven temperature choice is a tradeoff between surface color and interior evenness.
+    practice: Roast the same item at a high and a low temperature. Log crust versus interior doneness.
+
+  - id: heat.resting-carryover
+    title: Resting and Carryover Cooking
+    tier: 2
+    prereqs: [found.doneness, heat.searing-maillard]
+    why: Heat keeps moving after the food leaves the pan, and moisture redistributes. Skipping the rest undoes careful temperature work.
+    practice: Rest one protein and cut another immediately. Log juice loss and internal temperature change.
+
+  - id: heat.pan-frying
+    title: Pan-Frying and Shallow Frying
+    tier: 2
+    prereqs: [heat.saute]
+    why: More fat means more even surface contact and a real crust. Oil temperature recovery is the variable that decides greasy versus crisp.
+    practice: Pan-fry a breaded item. Log oil temperature before and after adding food, and the resulting crust.
+
+  - id: heat.braising
+    title: Braising
+    tier: 2
+    prereqs: [heat.searing-maillard, heat.boiling-simmering]
+    why: Combination cooking. Brown for flavor, then use low moist heat over time to convert collagen to gelatin. This is why tough cuts become the best ones.
+    practice: Braise a collagen-rich cut. Log texture at one hour versus done, and what the liquid became.
+
+  - id: heat.steaming-poaching
+    title: Steaming and Poaching
+    tier: 2
+    prereqs: [heat.dry-vs-moist]
+    why: Gentle, precise, no browning. The right choice when texture and moisture matter more than flavor development.
+    practice: Poach a delicate protein below a simmer. Log liquid temperature and resulting texture.
+
+  - id: heat.grilling
+    title: Grilling and Live Fire
+    tier: 2
+    prereqs: [heat.searing-maillard]
+    why: Intense radiant heat plus smoke. Two-zone setup is the difference between control and charred outsides with raw middles.
+    practice: Grill with a two-zone fire. Log where you seared, where you finished, and the internal temperature curve.
+
+  - id: heat.broiling
+    title: Broiling
+    tier: 2
+    prereqs: [heat.roasting]
+    why: Top-down radiant heat. A finishing tool for color and crust, and a fast route to burnt if unattended.
+    practice: Finish a dish under the broiler. Log rack distance, time, and how quickly it turned.
+
+  - id: heat.deep-frying
+    title: Deep Frying
+    tier: 3
+    prereqs: [heat.pan-frying]
+    why: Full immersion means even, rapid heat and violent moisture escape. Temperature management and batch size are the whole skill.
+    practice: Deep fry in two batches, monitoring recovery temperature. Log crispness of each batch.
+
+  - id: heat.low-temp-sous-vide
+    title: Low-Temperature and Sous Vide Cooking
+    tier: 3
+    prereqs: [found.doneness, heat.resting-carryover]
+    why: Decoupling interior doneness from surface browning. Precision at the cost of texture you have to add back.
+    practice: Cook a protein at low temperature, then sear it. Log edge-to-edge doneness versus a pan-only version.

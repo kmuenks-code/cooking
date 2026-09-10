@@ -1,0 +1,198 @@
+---
+id: heat.transfer-fundamentals
+module: heat-and-methods
+title: How Heat Moves Into Food
+tier: 1
+prereqs: [found.heat-control]
+estimated_read_minutes: 8
+summary: >
+  Three mechanisms move energy into food, and every cooking method is some
+  combination of them. Once you can name which mechanism a method is using, you
+  can predict what it will do to the surface and the interior without having
+  tried it.
+
+objectives:
+  - Distinguish conduction, convection, and radiation, and identify them in real methods.
+  - Explain why the same oven temperature cooks differently with and without a fan.
+  - Predict whether a method will produce a browned surface or an evenly cooked interior.
+  - Explain why thickness matters more than weight for cooking time.
+
+practice:
+  prompt: >
+    Cook one ingredient two ways that use different heat-transfer modes - for
+    example the same vegetable pan-seared (conduction) and roasted (convection
+    plus radiation), or the same protein pan-cooked and oven-cooked.
+  criteria:
+    - Note the difference in surface appearance between the two.
+    - Note the difference in how evenly the interior cooked.
+    - Note which one cooked faster and reason about why from the mechanism.
+
+videos:
+  - title: Heat Transfer Methods (GCSE Food)
+    channel: TODO
+    youtube_id: r9ZrT5vtVv0
+    note: >
+      A school food-science explainer covering conduction, convection, infrared
+      and microwave radiation. Dry, but it is the mechanism applied to food
+      rather than to physics-class abstractions.
+
+images:
+  - src: TODO
+    alt: Three panels showing conduction from a pan, convection in an oven, and radiation from a broiler.
+    caption: Nearly every method is a blend of these three, with one dominant.
+    credit: Original diagram
+  - src: TODO
+    alt: Cross-section of a thick steak showing the temperature gradient from seared surface to rare center.
+    caption: The gradient is the whole problem. Everything about method selection is managing its steepness.
+    credit: Original diagram
+
+sources:
+  - Harold McGee, On Food and Cooking, on heat and cooking
+  - J. Kenji Lopez-Alt, The Food Lab, on heat transfer
+
+reviewed: false
+---
+
+## Why bother with the physics
+
+You do not need this lesson to cook a decent dinner. You need it to stop
+memorizing methods.
+
+There are perhaps fifteen named cooking methods, and they look like fifteen
+separate things to learn. They are not. They are combinations of three ways of
+moving energy, applied through different media, and once you see that, roasting
+and grilling and broiling stop being three facts and become one idea with the
+knobs set differently.
+
+More usefully: it lets you predict. Handed an unfamiliar method or an unfamiliar
+piece of equipment, you can reason about what it will do rather than looking it
+up.
+
+## The three mechanisms
+
+### Conduction — direct contact
+
+Energy moves through direct physical contact, molecule to molecule. A pan touches
+a steak; the steak's surface heats. Inside the food, conduction is also how heat
+travels from the hot surface toward the cold center.
+
+- **Fast at the point of contact**, because contact is intimate and continuous.
+- **Very uneven**, because only the touching surface gets it.
+- **Produces browning readily**, because the contact surface can far exceed 212F.
+
+Pan-searing, griddling, and cooking on any solid hot surface are conduction
+dominant. So, importantly, is the movement of heat *inside* any piece of food,
+regardless of the method that put energy on its surface.
+
+Food is a poor conductor. That is not a detail — it is the central problem of
+cooking. It is why the outside of a thick steak is overcooked before the middle
+is warm, and why every technique for a thick piece of protein is fundamentally a
+strategy for managing that gradient.
+
+### Convection — a moving fluid
+
+Energy is carried by a moving fluid, either a gas (air, steam) or a liquid (water,
+oil). The fluid touches the food, gives up heat, moves away, and is replaced by
+more hot fluid.
+
+- **Even**, because the fluid surrounds the food.
+- **Speed depends enormously on the fluid.** Water conducts heat roughly 25 times
+  better than air at the same temperature. This is why 212F water cooks food
+  quickly while a 212F oven barely does anything, and why you can put your hand
+  in a 350F oven for a second but not in 350F oil.
+- **Speed also depends on how fast the fluid moves.** Still air next to food forms
+  an insulating boundary layer. Moving air strips it away.
+
+That last point is the entire explanation of a convection oven. Same temperature,
+moving air, faster cooking — because the fan removes the stagnant boundary layer
+that was insulating the food. This is why convection recipes tell you to lower
+the temperature by 25F or shorten the time. Nothing changed except air movement.
+
+It is also why a windy 35F day feels colder than a still one, which is a useful
+thing to have in mind — wind chill and convection ovens are the same physics.
+
+### Radiation — electromagnetic waves
+
+Energy travels as infrared radiation, needing no contact and no medium. A broiler
+element, glowing coals, and the walls of a hot oven all radiate.
+
+- **Surface only.** Infrared penetrates food barely at all. It heats the surface
+  and everything deeper happens by conduction from there.
+- **Intense and fast**, and it falls off sharply with distance.
+- **Excellent for browning**, terrible for cooking anything through.
+
+Broiling, grilling over coals, and the browning contribution of an oven's hot
+walls are radiation. It is the reason a grilled steak develops a crust in
+conditions where the air alone could never do it.
+
+## Real methods are blends
+
+Almost nothing is purely one mechanism. Naming the blend is the useful skill:
+
+| Method | Dominant | Also present |
+| --- | --- | --- |
+| Pan-searing | Conduction from the pan | A little radiation from the pan surface |
+| Deep frying | Convection through hot oil | Conduction where food touches the basket |
+| Boiling and simmering | Convection through water | — |
+| Steaming | Convection through steam, plus condensation | — |
+| Roasting | Convection through air | Significant radiation from oven walls |
+| Convection roasting | Forced convection | Radiation, and a thinner boundary layer |
+| Grilling | Radiation from coals or burners | Conduction from the grates, convection from rising air |
+| Broiling | Radiation, almost entirely | Minor convection |
+| Braising | Convection through liquid | Conduction from the pot |
+| Microwaving | None of the three | Dielectric heating, a genuinely different mechanism |
+
+Microwaves are worth the aside. They excite water molecules directly throughout
+the food's outer centimeter or so, rather than heating the surface and waiting
+for conduction. That is why microwaves are fast, why they heat unevenly (they
+follow water distribution, not geometry), and why they never brown — the surface
+never gets hotter than the water in it, which caps out at boiling.
+
+## Steam is the exception that explains a lot
+
+Steam looks like it should behave like hot air. It does not, and the reason is
+worth carrying.
+
+When steam touches food cooler than 212F, it condenses back into liquid water.
+That phase change releases a large amount of stored energy — the latent heat of
+vaporization — directly into the food's surface. Enormously more energy than
+simply cooling hot air by the same number of degrees.
+
+This is why steam at 212F cooks far faster than air at 212F, and why a steam burn
+is much worse than a hot-air burn at the same temperature. It is also why a wet
+oven browns poorly: condensing steam keeps the surface at 212F, which is below
+browning territory.
+
+## Two consequences worth internalizing
+
+**Thickness dominates cooking time, not weight.** Since interior cooking happens
+by conduction through a poor conductor, the time for heat to reach the center
+scales roughly with the *square* of the distance it has to travel. Double the
+thickness and you roughly quadruple the time. A flattened cutlet and a thick chop
+of identical weight are completely different cooking problems, and this is why
+pounding a chicken breast thin is a legitimate technique rather than a cheat.
+
+**Surface browning and interior doneness are separate problems with a shared
+budget.** Browning requires a surface above roughly 300F. Interior doneness for
+most proteins is 130-165F. The hotter and faster you drive the surface, the
+steeper the gradient and the more overcooked the layer under the crust will be.
+
+Every advanced protein technique is an attempt to decouple these. Reverse searing
+(cook the interior gently first, then brown fast at the end) and sous vide (hold
+the interior at exactly its target, then sear) are both explicitly the same
+strategy: bring the interior up under shallow-gradient conditions, then apply an
+intense, brief surface treatment. If that struck you as fussy before, it should
+now look like the obvious solution to a problem you can name.
+
+## The failure modes
+
+- **Assuming oven temperature equals food temperature.** A 400F oven does not
+  make food 400F. It supplies energy at a rate; the food's temperature depends on
+  time, mass, and surface.
+- **Ignoring the boundary layer.** Crowding a sheet pan traps moist air around
+  the food, killing convection and browning. Space is not aesthetic.
+- **Trying to brown in a wet environment.** Covered pans, crowded pans, and wet
+  food surfaces all hold the surface at 212F, where browning cannot happen.
+- **Using intense radiation to cook something through.** The broiler is a
+  finishing tool. It will burn a surface long before the center moves.
+- **Scaling time by weight.** Measure the thickness.
